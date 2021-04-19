@@ -85,7 +85,8 @@ func genOSRelease() {
 	}
 }
 
-func (si *SysInfo) getOSInfo() {
+// GetOSInfo get all the OS related info.
+func (si *SysInfo) GetOSInfo() {
 	// This seems to be the best and most portable way to detect OS architecture (NOT kernel!)
 	if _, err := os.Stat("/lib64/ld-linux-x86-64.so.2"); err == nil {
 		si.OS.Architecture = "amd64"
