@@ -1,3 +1,3 @@
-module github.com/zcalusic/sysinfo
+module go.aporeto.io/sysinfo
 
-go 1.13
+go 1.16
